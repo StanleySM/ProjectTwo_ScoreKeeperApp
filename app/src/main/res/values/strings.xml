@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cat football game</string>
+    <string name="intro">Let\'s count points for your cat</string>
+    <string name="catA">Viki</string>
+    <string name="catB">Cernovous</string>
+    <string name="CatFaceDescription">Cat face image</string>
+    <string name="CatADescription">Image of Cat A</string>
+    <string name="CatBDescription">Image of Cat B</string>
+    <string name="CatAStartValue">0</string>
+    <string name="CatBStartValue">0</string>
+    <string name="PlusPoint">Point +1</string>
+    <string name="MinusPoint">Lost ball -1</string>
+    <string name="ResetText">new game </string>
+
+
+</resources>

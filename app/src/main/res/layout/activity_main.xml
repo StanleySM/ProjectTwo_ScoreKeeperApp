@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/CatFaceDescription"
+                android:src="@drawable/cat_face" />
+
+            <TextView
+                style="@style/Header"
+                android:text="@string/app_name" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/Intro"
+            android:layout_height="wrap_content"
+            android:text="@string/intro" />
+
+        <LinearLayout
+
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/CatImage"
+                    android:contentDescription="@string/CatADescription"
+                    android:src="@drawable/cat_a" />
+
+                <TextView
+                    style="@style/CatName"
+                    android:text="@string/catA" />
+
+
+                <TextView
+                    android:id="@+id/catA"
+                    style="@style/ScoreNumber"
+                    android:text="@string/CatAStartValue" />
+
+                <Button
+                    style="@style/Button"
+                    android:onClick="plusPointForCatA"
+                    android:text="@string/PlusPoint" />
+
+                <Button
+                    style="@style/Button"
+                    android:onClick="minusPointForCatA"
+                    android:text="@string/MinusPoint" />
+
+
+            </LinearLayout>
+
+            <View style="@style/MiddleLine">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/CatImage"
+                    android:contentDescription="@string/CatBDescription"
+                    android:src="@drawable/cat_b" />
+
+                <TextView
+                    style="@style/CatName"
+                    android:text="@string/catB" />
+
+                <TextView
+                    android:id="@+id/catB"
+                    style="@style/ScoreNumber"
+                    android:text="@string/CatBStartValue" />
+
+                <Button
+                    style="@style/Button"
+                    android:onClick="plusPointForCatB"
+                    android:text="@string/PlusPoint" />
+
+                <Button
+                    style="@style/Button"
+                    android:onClick="minusPointForCatB"
+                    android:text="@string/MinusPoint" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            style="@style/ResetButton"
+            android:drawableLeft="@drawable/reset_button"
+            android:onClick="resetScore"
+            android:text="@string/ResetText" />
+
+    </LinearLayout>
+
+</ScrollView>
